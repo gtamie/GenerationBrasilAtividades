@@ -1,5 +1,6 @@
 package atv1_ProgramacaoSequencial;
-
+/*Faça um sistema que leia a idade de uma pessoa expressa em dias e mostre-a
+expressa em anos, meses e dias.*/
 import java.util.Scanner;
 
 public class Exercicio2 {
