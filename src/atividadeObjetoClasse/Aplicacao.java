@@ -46,6 +46,35 @@ public class Aplicacao {
 		f1.setSalario(3100);
 		f1.status();
 		f1.liberarCreche();
+		
+		//CRIAR OBJETO PATINETE
+		System.out.println("\nPATINETE");
+		Patinete p1 = new Patinete();
+		p1.setCor("Vermelho");
+		p1.setPesoSuportado(60);
+		p1.setRodas(2);
+		p1.status();
+		
+		//CRIAR OBJETO CONTA BANCÁRIA
+		System.out.println("\nCONTA BANCÁRIA");
+		ContaBancaria cb = new ContaBancaria();
+		cb.setTitular("Edgar Alan Poe");
+		cb.setAgencia(000);
+		cb.setNumero(0000000);
+		cb.setSaldo(1000);
+		cb.sacar(500);
+		cb.depositar(900);
+		cb.status();
+		
+		//CRIAR OBJETO PACIENTE
+		System.out.println("\nPACIENTE");
+		Paciente p11 = new Paciente();
+		p11.setNome("Maria Aparecida");
+		p11.setNrProntuario(123);
+		p11.setIdade((short) 45);
+		p11.setAlergia("Iodo");
+		p11.setUltimaConsulta(2);
+		p11.status();
 	}
 
 }
