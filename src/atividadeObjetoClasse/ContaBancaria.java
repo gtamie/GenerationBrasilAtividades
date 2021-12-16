@@ -26,16 +26,34 @@ public class ContaBancaria {
 	}
 	
 	
+	//métodos getters and setters
+
+	public String getTitular() {
+		return titular;
+	}
+
 	public void setTitular(String titular) {
 		this.titular = titular;
+	}
+
+	public int getNumero() {
+		return numero;
 	}
 
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
 
+	public int getAgencia() {
+		return agencia;
+	}
+
 	public void setAgencia(int agencia) {
 		this.agencia = agencia;
+	}
+
+	public int getSaldo() {
+		return saldo;
 	}
 
 	public void setSaldo(int saldo) {
@@ -43,10 +61,10 @@ public class ContaBancaria {
 	}
 
 	public void status() {
-		System.out.println("Titular: "+this.titular);
-		System.out.println("Número: "+this.numero);
-		System.out.println("Agência: "+this.agencia);
-		System.out.println("Saldo: "+this.saldo);
+		System.out.println("Titular: "+this.getTitular());
+		System.out.println("Número: "+this.getNumero());
+		System.out.println("Agência: "+this.getAgencia());
+		System.out.println("Saldo: "+this.getSaldo());
 	}
 
 }

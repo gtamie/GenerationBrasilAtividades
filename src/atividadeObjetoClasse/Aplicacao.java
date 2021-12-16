@@ -26,6 +26,7 @@ public class Aplicacao {
 		av.status();
 		System.out.println("Assentos livres: "+av.alertarLotacao());
 		av.alertarCombustivel();
+		System.out.println("Permissão para decolar: "+av.decolar());
 		
 		//CRIAR OBJETO PRODUTO ELETRÔNICO
 		System.out.println("\nPRODUTO ELETRÔNICO");

@@ -1,32 +1,44 @@
 package atividadeHeranca;
 
-public class Animal {
+public abstract class Animal {
 	//atributos
 	private String nome;
 	private int idade;
-	private boolean emiteSom;
-	//método construtor
-	public Animal() {
-		emiteSom=true;
+	
+	
+	//Polimorfismo
+	public abstract void emitirSom();
+	
+	
+	//métodos setters e getters
+	public String getNome() {
+		return nome;
 	}
-	//métodos setters
+
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
+
+	public int getIdade() {
+		return idade;
+	}
+
 
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
 
-	public void setEmiteSom(boolean emiteSom) {
-		this.emiteSom = emiteSom;
-	}
+	
 	//status
 	public void status() {
-		System.out.println("Nome: "+this.nome);
-		System.out.println("Idade: "+this.idade);
-		System.out.println("Emite som: "+this.emiteSom);
+		System.out.println("Nome: "+this.getNome());
+		System.out.println("Idade: "+this.getIdade());
+		
 		
 	}
 
+
+	
 }

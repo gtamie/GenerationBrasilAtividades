@@ -17,6 +17,12 @@ public class Preguica extends Animal{
 	//status
 	public void statusPreguica(){
 		System.out.println("Sobe em árvores: "+this.sobeEmArvores);
+	}
+	
+	//polimorfismo
+	@Override
+	public void emitirSom() {
+		System.out.println("Som: desconhecido");
 		
 	}
 

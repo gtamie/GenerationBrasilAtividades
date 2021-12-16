@@ -3,7 +3,8 @@ package atividadeHeranca;
  * conhecimentos e distribua as características de forma que tudo 
  * o que for comum a todos os animais fique na classe Animal.
  * 2. Implemente um programa que crie os 3 tipos de animais definidos 
- * no exercício anterior
+ * no exercício anterior e invoque o método que emite o som de cada um 
+ * de forma polimórfica, isto é, independente do tipo de animal.
  */
 
 public class Exercicio1e2 {
@@ -19,16 +20,19 @@ public class Exercicio1e2 {
 		golden.setIdade(2);
 		golden.status();
 		golden.statusCachorro();
+		golden.emitirSom();
 		System.out.println("\nCavalo: ");
 		cav.setNome("Apple Jack");
 		cav.setIdade(3);
 		cav.status();
-		cav.statusCachorro();
+		cav.statusCachorro(); //herdou o mesmo status
+		cav.emitirSom();
 		System.out.println("\nPreguiça: ");
 		bp.setNome("Bicho Preguiça");
 		bp.setIdade(1);
 		bp.status();
 		bp.statusPreguica();
+		bp.emitirSom();
 		
 		
 		

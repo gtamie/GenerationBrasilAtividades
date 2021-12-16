@@ -1,11 +1,15 @@
 package atividadeObjetoClasse;
 
 public class Aviao {
+	//ATRIBUTOS
 	private String porte;
 	private double combustivel;
 	private String companhia;
 	private int qtdPassageiros;
 	private int assentosLivres;
+	private boolean permissaoDecolar;
+	
+	//MÉTODOS
 	public int alertarLotacao() {
 		if(porte=="pequeno"&&qtdPassageiros<20)
 		{
@@ -24,11 +28,25 @@ public class Aviao {
 	
 	public void alertarCombustivel() {
 		if(combustivel<=50)
-		{System.out.println("Abasteça o avião.");
+		{
+			System.out.println("Abasteça o avião.");
+		}
+
 	}
 
-}
-
+	
+	public boolean decolar() {
+		if(combustivel<=50)
+		{
+			permissaoDecolar=false;
+		}
+		else
+		{
+			permissaoDecolar=true;
+		}
+		return permissaoDecolar;
+	}
+	
 	public String getPorte() {
 		return porte;
 	}
@@ -62,8 +80,9 @@ public class Aviao {
 	}
 	
 	public void status() {
-		System.out.println("% Combustível: "+this.combustivel);
-		System.out.println("Porte: "+this.porte);
-		System.out.println("Quantidade de passageiros: "+this.qtdPassageiros);
+		System.out.println("% Combustível: "+getCombustivel());
+		System.out.println("Porte: "+getPorte());
+		System.out.println("Quantidade de passageiros: "+getQtdPassageiros());
+		System.out.println("Companhia: "+getCompanhia());
 	}
 }

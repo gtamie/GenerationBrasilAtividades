@@ -16,8 +16,21 @@ public class Paciente {
 	}
 	
 		
+//setters and getters
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+
+	public int getNrProntuario() {
+		return nrProntuario;
 	}
 
 
@@ -26,9 +39,23 @@ public class Paciente {
 	}
 
 
+
+	public short getIdade() {
+		return idade;
+	}
+
+
+
 	public void setIdade(short idade) {
 		this.idade = idade;
 	}
+
+
+
+	public String getAlergia() {
+		return alergia;
+	}
+
 
 
 	public void setAlergia(String alergia) {
@@ -36,17 +63,25 @@ public class Paciente {
 	}
 
 
+
+	public int getUltimaConsulta() {
+		return ultimaConsulta;
+	}
+
+
+
 	public void setUltimaConsulta(int ultimaConsulta) {
 		this.ultimaConsulta = ultimaConsulta;
 	}
 
 
+
 	public void status() {
-		System.out.println("Nome: "+this.nome);
-		System.out.println("Número do prontuário: "+this.nrProntuario);
-		System.out.println("Idade: "+this.idade);
-		System.out.println("Alergia: "+this.alergia);
-		System.out.println("Última consulta: "+this.ultimaConsulta+" anos atrás");
+		System.out.println("Nome: "+this.getNome());
+		System.out.println("Número do prontuário: "+this.getNrProntuario());
+		System.out.println("Idade: "+this.getIdade());
+		System.out.println("Alergia: "+this.getAlergia());
+		System.out.println("Última consulta: "+this.getUltimaConsulta()+" anos atrás");
 	}
 	
 

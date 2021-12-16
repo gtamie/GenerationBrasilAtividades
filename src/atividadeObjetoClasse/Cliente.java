@@ -5,6 +5,7 @@ package atividadeObjetoClasse;
  */
 public class Cliente {
 
+	//atributos
 	private String nome;
 	private String email;
 	private String endereco;
@@ -12,6 +13,7 @@ public class Cliente {
 	private long cpf;
 	private long celular;
 	
+	//métodos
 	public void descontar() {
 		if(pagamento=="boleto")
 		{
@@ -55,13 +57,14 @@ public class Cliente {
 	public void setCelular(long celular) {
 		this.celular = celular;
 	}
+	//status
 	public void status() {
-		System.out.println("Nome:"+this.nome);
-		System.out.println("CPF: "+this.cpf);
-		System.out.println("Email: "+this.email);
-		System.out.println("Celular: "+this.celular);
-		System.out.println("Endereço: "+this.endereco);
-		System.out.println("Método de pagamento: "+this.pagamento);
+		System.out.println("Nome:"+getNome());
+		System.out.println("CPF: "+getCelular());
+		System.out.println("Email: "+getEmail());
+		System.out.println("Celular: "+getCelular());
+		System.out.println("Endereço: "+getEmail());
+		System.out.println("Método de pagamento: "+getPagamento());
 	}
 	
 }
