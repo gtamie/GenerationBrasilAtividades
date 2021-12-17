@@ -16,7 +16,7 @@ public class Exercicio3 {
 		
 		int opcao, k=-1;
 		Scanner ler= new Scanner(System.in);
-		ler.useLocale(Locale.US);
+		ler.useLocale(Locale.US); //Para conseguir ler double com ponto(ex.: 20.5)
 		System.out.println("Estoque Papelaria Magenta");
 	
 		//criando itens da lista
