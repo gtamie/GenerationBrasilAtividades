@@ -3,7 +3,7 @@ package atividadeCollections;
 public class ItensEstoque {
 	
 	private String nome;
-	private double preço;
+	private double preco;
 	private int quantidade;
 	
 	
@@ -17,13 +17,13 @@ public class ItensEstoque {
 	}
 
 
-	public double getPreço() {
-		return preço;
+	public double getPreco() {
+		return preco;
 	}
 
 
-	public void setPreço(double preço) {
-		this.preço = preço;
+	public void setPreco(double preco) {
+		this.preco = preco;
 	}
 
 
@@ -39,7 +39,7 @@ public class ItensEstoque {
 
 	public ItensEstoque(String n, double p, int q) {
 		this.setNome(n);
-		this.setPreço(p);
+		this.setPreco(p);
 		this.setQuantidade(q);
 			
 	}
