@@ -93,6 +93,7 @@ public class Exercicio3 {
 			}
 		
 		}while(opcao!=5);
+		ler.close();
 
 	}
 	

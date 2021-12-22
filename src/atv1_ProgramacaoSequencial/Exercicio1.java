@@ -18,6 +18,8 @@ public class Exercicio1 {
 		
 		resp=anos*365+meses*30+dias;
 		System.out.println("Sua idade em dias é: "+resp);
+		
+		leia.close();
 	}
 
 }

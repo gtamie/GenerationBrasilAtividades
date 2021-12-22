@@ -19,6 +19,7 @@ public class Exercicio5 {
 		n3=n3*5;
 		m=(n1+n2+n3)/10;
 		System.out.print("A média ponderada é: "+m);
+		leia.close();
 	}
 
 }

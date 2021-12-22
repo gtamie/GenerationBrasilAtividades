@@ -27,5 +27,6 @@ public class Exercicio4 {
 		}
 		System.out.println("A soma de todos os valores da matriz é: "+st);
 		System.out.println("A soma dos valores da diagonal principal é: "+sd);
+		ler.close();
 	}
 }

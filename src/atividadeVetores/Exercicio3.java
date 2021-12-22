@@ -68,6 +68,7 @@ posição das matrizes N1 e N2.*/
 			}	
 			System.out.println("\n");
 		}
+		ler.close();
 
 	}
 

@@ -75,7 +75,7 @@ public class Exercicio4 {
 		System.out.println("\nTotal de outros calmos: "+contOutrosCalmos);
 		System.out.println("\nTotal de pessoas nervosas com mais de 40 anos: "+contPessoasNervMais40);
 		System.out.println("\nTotal de pessoas calmas com menos de 18 anos: "+contPessoasCalmasMenos18);
-		
+		ler.close();
 		
 	}
 

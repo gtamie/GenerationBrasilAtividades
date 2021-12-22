@@ -7,6 +7,7 @@ public abstract class Animal {
 	
 	
 	//Polimorfismo
+	
 	public abstract void emitirSom();
 	
 	

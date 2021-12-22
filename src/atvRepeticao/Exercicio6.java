@@ -22,7 +22,8 @@ public class Exercicio6 {
 				
 			}
 		}while(x!=0);
-	System.out.println("A média dos números múltiplos de 3 é: "+soma/contagem);			
+	System.out.println("A média dos números múltiplos de 3 é: "+soma/contagem);
+	ler.close();
 	}
 
 }

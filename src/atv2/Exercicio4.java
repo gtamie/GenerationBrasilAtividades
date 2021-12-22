@@ -25,6 +25,7 @@ public class Exercicio4 {
 		System.out.println(n+" é ímpar. "+n+"²="+potencia);
 			
 		}
+		ler.close();
 	}
 
 }

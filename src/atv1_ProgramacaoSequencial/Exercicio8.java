@@ -20,7 +20,7 @@ public class Exercicio8 {
 		imp=(float) (cf*0.45);
 		cc=cf+dist+imp;
 		System.out.print("O valor de venda do veículo é R$: "+ cc);
-
+		leia.close();
 	}
 
 }

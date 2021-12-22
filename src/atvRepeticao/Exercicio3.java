@@ -32,6 +32,7 @@ public class Exercicio3 {
 		}
 		System.out.println("Total de pessoas com menos de 21 anos: "+
 				contagemMenos21+"\nTotal de pessoas com mais de 50 anos: "+contagemMais50);
+		ler.close();
 	}
 
 }

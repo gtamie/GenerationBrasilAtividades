@@ -21,6 +21,7 @@ public class Exercicio4 {
 		s= Math.pow(b+c,2.0);
 		d= (r+s)/2;
 		System.out.print("O resultado é: "+d);
+		leia.close();
 
 	}
 

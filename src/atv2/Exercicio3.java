@@ -31,7 +31,7 @@ public class Exercicio3 {
 		{
 			System.out.println("Categoria não cadastrada.");
 		}
-		
+		ler.close();
 
 }
 }

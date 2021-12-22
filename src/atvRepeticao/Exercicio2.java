@@ -23,7 +23,8 @@ public class Exercicio2 {
 		}
 		System.out.println("Quantidade de números ímpares: "+contadorImpar+
 				". Quantidade de números pares: "+contadorPar+".");
-
+		ler.close();
 	}
+	
 
 }

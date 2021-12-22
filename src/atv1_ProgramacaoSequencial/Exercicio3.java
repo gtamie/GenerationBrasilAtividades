@@ -16,7 +16,7 @@ public class Exercicio3 {
 		m=r/60;
 		s=r%60;
 		System.out.print("\nO tempo de duração é "+h+" horas "+m+" minutos e "+s+" segundos");
-
+		leia.close();
 	}
 
 }

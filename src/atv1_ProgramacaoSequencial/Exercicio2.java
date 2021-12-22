@@ -16,6 +16,7 @@ public class Exercicio2 {
 		dias=sobra%30;
 		
 		System.out.println("Sua idade é: "+anos+" anos, "+meses+" meses e "+dias+" dias");
+		leia.close();
 
 	}
 

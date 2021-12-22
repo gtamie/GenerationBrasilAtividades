@@ -27,7 +27,7 @@ public class Exercicio1 {
 			System.out.print(vet[x]+"\t");
 		}
 		System.out.println("\n O maior valor digitado foi: "+ maior);
-		
+		ler.close();
 
 	}
 	

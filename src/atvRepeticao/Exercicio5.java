@@ -18,7 +18,7 @@ public class Exercicio5 {
 			soma=soma+x;			
 		}while(x!=0);
 		System.out.printf("A soma dos números é: %d",soma);
-		
+		ler.close();
 		
 	}
 

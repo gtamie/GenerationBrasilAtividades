@@ -28,6 +28,7 @@ public class Exercicio1 {
 		{
 			System.out.print("Os três números são iguais.");
 		}
+		ler.close();
 	}
 
 }

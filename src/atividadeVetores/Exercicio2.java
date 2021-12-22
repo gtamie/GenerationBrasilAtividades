@@ -35,7 +35,7 @@ public class Exercicio2 {
 		media=s/10;
 		System.out.println("\nA média dos valores lançados é :"+media);
 		System.out.println("A maior pontuação ocorreu "+cont+ " vezes");
-		
+		ler.close();
 	}
 
 }

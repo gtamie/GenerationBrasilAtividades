@@ -39,6 +39,7 @@ public class Exercicio2 {
 		{
 			System.out.print("Erro. Digite três números inteiros diferentes.");
 		}
+		ler.close();
 	}
 
 }
