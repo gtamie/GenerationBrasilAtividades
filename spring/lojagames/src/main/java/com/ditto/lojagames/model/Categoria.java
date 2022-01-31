@@ -2,6 +2,7 @@ package com.ditto.lojagames.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Table(name="tb_categoria")     
 public class Categoria {
 	
-	@OneToMany
+	@OneToMany(mappedBy="categoria", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("categoria")
 	private List<Produto> produto;
 	

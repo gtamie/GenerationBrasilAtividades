@@ -29,7 +29,7 @@ public class ProdutoController {
 	@Autowired
 	private ProdutoRepository produtoRepository;
 	
-	@GetMapping
+	@GetMapping("/listar")
 	public ResponseEntity<List<Produto>> findAllProduto(){
 		return ResponseEntity.ok(produtoRepository.findAll());
 	}
