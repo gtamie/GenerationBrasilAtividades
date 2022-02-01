@@ -47,14 +47,7 @@ public class UsuarioController {
 			.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
 	}
 
-	/**
-	 * Executa o método cadastrarUsuario da classe de serviço para criar
-	 * um novo usuário na api. O método da classe Controladora checa se 
-	 * deu certo e exibe as mensagens (Response Status) pertinentes. 
-	 * 
-	 * Caso cadastro tenha sido bem sucedido, os dados do usuário são 
-	 * exibidos.
-	 */
+
 	@PostMapping("/cadastrar")
 	public ResponseEntity<Usuario> postUsuario(@Valid @RequestBody Usuario usuario) {
 
@@ -64,14 +57,7 @@ public class UsuarioController {
 
 	}
 
-	/**
-	 * Executa o método atualizarUsuario da classe de serviço para atualizar
-	 * os dados de um usuário na api. O método da classe Controladora checa 
-	 * se deu certo e exibe as mensagens (Response Status) pertinentes. 
-	 * 
-	 * Caso a atualização tenha sido bem sucedida, os dados do usuário 
-	 * atualizados são exibidos.
-	 */
+	
 	@PutMapping("/atualizar")
 	public ResponseEntity<Usuario> putUsuario(@Valid @RequestBody Usuario usuario) {
 		return usuarioService.atualizarUsuario(usuario)

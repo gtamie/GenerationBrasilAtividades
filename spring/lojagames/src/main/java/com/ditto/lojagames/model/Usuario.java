@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Usuario {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	@NotBlank(message = "O atributo nome é obrigatório e não aceita espaço em branco")
@@ -34,10 +34,6 @@ public class Usuario {
 	@NotBlank(message = "O atributo senha é obrigatório e não aceita espaço em branco")
 	@Size(min = 8, message = "O atributo senha deve ter no mínimo oito caracteres")
 	private String senha;
-	
-	/*@NotBlank(message = "O atributo idade é obrigatório e não aceita espaço em branco")
-	@Size(max = 3, message = "O atributo idade deve ter no mínimo três caracteres")
-	private int idade;*/
 	
 	@NotBlank(message = "O atributo endereco é obrigatório e não aceita espaço em branco")
 	@Size(min = 5, message = "O atributo endereco deve ter no mínimo cinco caracteres")

@@ -9,9 +9,7 @@ public class UsuarioLogin {
 	private String usuario;
 	
 	private String senha;
-	
-	//private int idade;
-	
+		
 	private String endereco;
 	
 	private String token;

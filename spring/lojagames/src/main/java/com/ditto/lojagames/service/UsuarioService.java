@@ -25,10 +25,6 @@ public class UsuarioService {
 		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
 			return Optional.empty();
 		
-		/*if (usuario.getIdade()<18) {
-			
-			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Somente usuários com mais de 18 anos podem realizar cadastro", null);
-		}*/
 		usuario.setSenha(criptografarSenha(usuario.getSenha()));
 		
 		return Optional.of(usuarioRepository.save(usuario));
@@ -63,7 +59,6 @@ public class UsuarioService {
 
 				usuarioLogin.get().setId(usuario.get().getId());
 				usuarioLogin.get().setNome(usuario.get().getNome());
-				//usuarioLogin.get().setIdade(usuario.get().getIdade());
 				usuarioLogin.get().setEndereco(usuario.get().getEndereco());
 				usuarioLogin.get().setToken(gerarBasicToken(usuarioLogin.get().getUsuario(), usuarioLogin.get().getSenha()));
 				usuarioLogin.get().setSenha(usuario.get().getSenha());
