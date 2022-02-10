@@ -33,12 +33,27 @@
     
   }
 
-  /** Permite que o formulário de contato não fique colado à margem esquerda **/
-  div.body-content.contato {
-    margin-left: 20%;
+  .container.sudoku{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
   }
 
-  p {
+  .container.contato{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .animated {
+    height: auto;
+    width: 20em;
+    padding-top: 25%;
+
+    
+  }
+
+  p.textoCentralizado {
     text-align: center;
   }
 
@@ -76,7 +91,7 @@
   /** Formulário de contato **/
   #formularioContato {
     padding-top: 2em;
-
+  
   }
   .campo {
     margin-bottom: 1em;
@@ -92,7 +107,7 @@
     padding: 0.2em;
     border: 0;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    display: block;
+    display: flex;
   }
 
   .botoes {
@@ -119,6 +134,7 @@
   }
 
   p.linhaRodape {
+    text-align: center;
     margin: 0;
     width: 100%;
     height: 60px;
