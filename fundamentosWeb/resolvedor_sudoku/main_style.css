@@ -1,21 +1,20 @@
 @media screen {
 
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
   html, body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
   }
 
-  body.fundo{
-    background-repeat: no-repeat; 
+  body.fundo {
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    
+    background-position: center;
+    background-attachment: fixed;
     background-image: url(assets/eberhard-grossgasteiger-S-2Ukb_VqpA-unsplash.jpg);
-}
+  
+  }
 
   header {
     margin-top: 2em;
@@ -29,14 +28,21 @@
   }
 
   div.body-content {
-    /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
+    /** Altura do rodapé tem que ser igual ao padding-bottom dessa div para o rodapé ser responsivo **/
     padding-bottom: 100px;
+    
+  }
+
+  /** Permite que o formulário de contato não fique colado à margem esquerda **/
+  div.body-content.contato {
+    margin-left: 20%;
   }
 
   p {
     text-align: center;
   }
 
+   /** Grid do Sudoku **/
   table {
     margin: 2em auto;
     border-collapse: collapse;
@@ -67,19 +73,42 @@
     border-bottom: solid;
   }
 
+  /** Formulário de contato **/
+  #formularioContato {
+    padding-top: 2em;
+
+  }
+  .campo {
+    margin-bottom: 1em;
+  }
+
+  .campo label {
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+  }
+
+  .campo input[type="text"], .campo input[type="email"], .campo textarea {
+    padding: 0.2em;
+    border: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+  }
 
   .botoes {
     text-align: center;
   }
 
-  input#botaoEnviar {
+  input.botaoEnviar {
     margin: 1em auto;
     color: rgb(231, 35, 35);
   }
 
+  div.voltar{
+    padding-top: 2em;
+  }
 
-
-
+  /** Rodapé **/
   footer {
     background-color: gainsboro;
     width: 100%;
@@ -89,11 +118,11 @@
     left: 0;
   }
 
-  p#linhaRodape{
+  p.linhaRodape {
     margin: 0;
     width: 100%;
     height: 60px;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
   }
