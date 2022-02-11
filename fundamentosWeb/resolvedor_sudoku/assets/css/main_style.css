@@ -12,7 +12,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-image: url(assets/eberhard-grossgasteiger-S-2Ukb_VqpA-unsplash.jpg);
+    background-image: url(../img/eberhard-grossgasteiger-S-2Ukb_VqpA-unsplash.jpg);
   
   }
 
@@ -100,7 +100,7 @@
   .campo label {
     margin-bottom: 0.2em;
     color: black;
-    display: block;
+    display: block; /**Quebra de linha entre label e input**/
   }
 
   .campo input[type="text"], .campo input[type="email"], .campo textarea {
